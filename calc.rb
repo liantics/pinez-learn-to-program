@@ -1,34 +1,39 @@
-puts 'hello'.+ ' world'
-puts (10.*9).+ 9
+letters = 'aAbBcCdDeE'
+puts letters.upcase
+puts letters.downcase
+puts letters.swapcase
+puts letters.capitalize
+puts ' a'.capitalize
+puts ' a'.upcase
+puts letters
 puts ''
 
-iCantBelieveIMadeAVariableNameThisLongJustToPointToA3 = 3
-puts 'puts'
-puts iCantBelieveIMadeAVariableNameThisLongJustToPointToA3
-puts 'self.puts'
-#not working in this version of ruby - self.puts iCantBelieveIMadeAVariableNameThisLongJustToPointToA3 
+linewidth = 50
+puts(                 'Old Mother Hubbard'.center(linewidth))
+puts(     	         'Sat in her cupboard'.center(linewidth))
+puts(          'Eating her curds and whey'.center(linewidth))
+puts(           'When along came a spider'.center(linewidth))
+puts(          'Which sat down beside her'.center(linewidth))
+puts(  'And scared her poor shoe dog away'.center(linewidth))
+puts''
 
-var1 = 'stop'
-var2 = 'stressed'
-var3 = 'Can you pronounce this sentence backwards?'
-
-puts var1.reverse
-puts var2.reverse
-puts var3.reverse
-puts var1
-puts var2
-puts var3
-
-puts 'What is your full name?'
-name = gets.chomp
-puts 'Did you know there are ' +name.length.to_s + ' characters in your name, ' + name + '?'
+lineWidth = 40 
+half = lineWidth/2
+str = '--> text <--'
+puts str.ljust lineWidth 
+puts str.center lineWidth
+puts str.rjust lineWidth
+puts str.ljust(lineWidth/2) + str.rjust(half)
 
 puts ''
-puts 'First name?'
-first = gets.chomp
-puts 'Middle name?'
-middle = gets.chomp
-puts 'Last name?'
-last = gets.chomp
-concat = first.length + middle.length + last.length
-puts 'Did you know there are ' + concat.to_s + ' letters in ' + first + ' ' + middle + ' ' + last + '?'
+puts 'Whadaya want?'
+want = gets.chomp
+angryboss = 'Whadaya mean "'.upcase + want.upcase + '"?!? You\'re fired!'.upcase
+puts angryboss
+
+puts ''
+widthofline = 72
+puts 'Table of Contents'.center(widthofline)
+puts 'Chapter 1: Numbers'.ljust(widthofline/2) + 'page 1'.rjust(widthofline/2)
+puts 'Chapter 2: Letters'.ljust(widthofline/2) + 'page 72'.rjust(widthofline/2)
+puts 'Chapter 3: Variables'.ljust(widthofline/2) + 'page 118'.rjust(widthofline/2)
