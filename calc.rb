@@ -27,18 +27,15 @@ puts (not iAmLiane )
 
 #things to try
 
-#99 bottles of beer
-bottles = 99
-while bottles >= 1 
-	if bottles == 1
-			puts bottles.to_s + ' bottle of beer on the wall, ' + bottles.to_s + ' bottle of beer.' + "\n" + ' Take one down, pass it around, no bottles of beer on the wall.'
-	else 
-		if bottles ==2
-			puts bottles.to_s + ' bottles of beer on the wall, ' + bottles.to_s + ' bottles of beer.' + "\n" + ' Take one down, pass it around, ' + (bottles - 1).to_s + ' bottle of beer on the wall.' + "\n \n"
-		else 
-			puts bottles.to_s + ' bottles of beer on the wall, ' + bottles.to_s + ' bottles of beer.' + "\n" + ' Take one down, pass it around, ' + (bottles - 1).to_s + ' bottles of beer on the wall.' + "\n \n"
-		end
+#deaf grandma
+puts "And now, it's time for a talk with deaf grandma ... say BYE when you're done."
+words = gets.chomp
+while words != 'BYE'
+	puts 'up = ' + words.upcase + ' down = ' + words.downcase + ' capitalize = ' + words.capitalize + ' words = ' + words + "\n"
+	if words == (words.upcase)
+	 	puts 'NO, NOT SINCE ' + (rand (1930 .. 1950)).to_s 
+	else
+		puts 'HUH?!  SPEAK UP, SONNY!'
 	end
-	bottles = (bottles -1)
-
+	words = gets.chomp
 end
