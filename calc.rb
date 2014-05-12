@@ -23,6 +23,7 @@ else
   puts 'I really have to go, sorry!'
 end
 
+#changed for French, just 'cuz
 puts 'Bienvenue au 5th grade Francais.'
 puts 'Je suis Mme Gabbard.  Tu es ...?' 
 name = gets.chomp
@@ -40,3 +41,23 @@ else
     puts 'Sortez vous!!'
   end
 end
+
+#from the example
+puts ''
+command = ''
+
+while command != 'bye'
+  puts command
+  puts 'write something:'
+  command = gets.chomp
+end
+puts 'Come again soon!'
+
+#rewrite to eliminate the blank puts
+command = ''
+while command != 'bye'
+command = gets.chomp
+puts command
+end
+puts 'Come again soon!'
+
