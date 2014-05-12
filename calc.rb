@@ -1,36 +1,27 @@
-henryTheEighth = '... you can say that again ... '+ "\n"
-puts henryTheEighth * 2
+var1 = 2
+var2 = '5'
+
+puts var1.to_s + var2
+puts var1 + var2.to_i
 
 puts ''
 
-name = '[An Utterly Ridiculously Long Name Goes Here]'
-puts 'My name is ' + name + '.'
-puts 'Wow! ' +name+ ' is a really long name!'
+puts '15'.to_f
+puts '99.999'.to_f
+puts '99.999'.to_i
+puts ''
+puts '5 is my favorite number!'.to_i
+puts 'Who asked you about 5 or whatever?'.to_i
+puts 'Your momma did'.to_f
+puts ''
+puts 'stringy'.to_s
+puts 3.to_i
+puts ''
+puts 'enter a string:'
+puts gets
 
 puts ''
-composer = 'Mozart '
-puts composer + 'was "da bomb," in his day.'
-
-composer = 'Beethoven'
-puts 'But I prefer ' +composer+ ', personally.'
-
-puts ''
-
-var = 'just another ' + 'string'
-puts var
-
-puts ''
-
-var = 5 * (1+2)
-puts var
-
-puts ''
-
-var1 = 8
-var2 = var1
-puts var1
-puts var2
-puts ''
-var1 = "eight"
-puts var1
-puts var2
+puts 'Hello there, and what\'s your name?'
+name = gets.chomp
+puts 'Your name is ' +name+ '? What a lovely name!'
+puts 'Pleased to meet you, ' +name+ '. :-)'
