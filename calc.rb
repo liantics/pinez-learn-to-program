@@ -1,63 +1,44 @@
-#relative size
-puts 1 > 2
-puts 2 > 1
-puts 5 >= 5
-puts 5 <= 4
-#equality
-puts 1 == 1
-puts 2 != 1
-#string comparison
-cat = 'cat'.downcase
-DOG = 'dog'.downcase
-puts  (cat < DOG)
+#branching for 2 names
 
-puts ''
-puts 'I am a fortune-teller.  Tell me your name:'
-name = gets.chomp
-if name == 'Liane'
-	
-	puts 'Hello, ' + name + '. Great name!'
-  puts 'I see great things in your future.'
-else
-  puts 'Your future is... Oh my!  Look at the time!'
-  puts 'I really have to go, sorry!'
+puts 'Hello, what\'s your name?'
+name = 'name' #gets.chomp make the program finish itself w/o input
+puts 'Hello, ' + name + '.'
+if name == ('Chris' or 'Katy')
+  puts 'What a lovely name!'
 end
 
-#changed for French, just 'cuz
-puts 'Bienvenue au 5th grade Francais.'
-puts 'Je suis Mme Gabbard.  Tu es ...?' 
-name = gets.chomp
+iAmLiane = true
+iAmPurple = false
+iLikeFood = true
+iEatRocks = false
 
-if name == name.capitalize
-  puts 'Assiez vous, s\'il vous plait, ' + name + '.'
-else
-  puts name + '?  Intendez vous ' + name.capitalize + '?'
-  puts 'Comprendez vous comment epeler votre nom??'
-  reply = gets.chomp
-  
-  if reply.downcase == 'oui'
-    puts 'Hmmph!  Assiez, vous!'
-  else
-    puts 'Sortez vous!!'
-  end
+puts (iAmLiane  and iLikeFood)
+puts (iLikeFood and iEatRocks)
+puts (iAmPurple and iLikeFood)
+puts (iAmPurple and iEatRocks)
+puts
+puts (iAmLiane  or iLikeFood)
+puts (iLikeFood or iEatRocks)
+puts (iAmPurple or iLikeFood)
+puts (iAmPurple or iEatRocks)
+puts
+puts (not iAmPurple)
+puts (not iAmLiane )
+
+#things to try
+
+#99 bottles of beer
+bottles = 99
+while bottles >= 1 
+	if bottles == 1
+			puts bottles.to_s + ' bottle of beer on the wall, ' + bottles.to_s + ' bottle of beer.' + "\n" + ' Take one down, pass it around, no bottles of beer on the wall.'
+	else 
+		if bottles ==2
+			puts bottles.to_s + ' bottles of beer on the wall, ' + bottles.to_s + ' bottles of beer.' + "\n" + ' Take one down, pass it around, ' + (bottles - 1).to_s + ' bottle of beer on the wall.' + "\n \n"
+		else 
+			puts bottles.to_s + ' bottles of beer on the wall, ' + bottles.to_s + ' bottles of beer.' + "\n" + ' Take one down, pass it around, ' + (bottles - 1).to_s + ' bottles of beer on the wall.' + "\n \n"
+		end
+	end
+	bottles = (bottles -1)
+
 end
-
-#from the example
-puts ''
-command = ''
-
-while command != 'bye'
-  puts command
-  puts 'write something:'
-  command = gets.chomp
-end
-puts 'Come again soon!'
-
-#rewrite to eliminate the blank puts
-command = ''
-while command != 'bye'
-command = gets.chomp
-puts command
-end
-puts 'Come again soon!'
-
