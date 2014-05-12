@@ -1,38 +1,36 @@
-puts 'Hello, world!'
+henryTheEighth = '... you can say that again ... '+ "\n"
+puts henryTheEighth * 2
+
 puts ''
-puts 'Good-bye.'
+
+name = '[An Utterly Ridiculously Long Name Goes Here]'
+puts 'My name is ' + name + '.'
+puts 'Wow! ' +name+ ' is a really long name!'
+
 puts ''
-puts 'random text'
-puts '... \'cuz random is cool'
+composer = 'Mozart '
+puts composer + 'was "da bomb," in his day.'
+
+composer = 'Beethoven'
+puts 'But I prefer ' +composer+ ', personally.'
+
 puts ''
-puts 'I like' + 'apple pie.'
-puts 'I like ' + 'apple pie.'
-puts 'I like' + ' apple pie'
+
+var = 'just another ' + 'string'
+puts var
+
 puts ''
-puts 'blink ' * 4
+
+var = 5 * (1+2)
+puts var
+
 puts ''
-puts 12 + 12
-puts '12' + '12'
-puts '12 + 12'
+
+var1 = 8
+var2 = var1
+puts var1
+puts var2
 puts ''
-puts 2 * 5
-puts '2' * 5
-puts '2 * 5'
-puts ''
-puts 'You\'re swell!'
-puts 'backslash at the end of a string: \\'
-puts 'up\\down'
-puts 'up\down'
-
-
-
-
-
-
-
-
-
-
-
-
-
+var1 = "eight"
+puts var1
+puts var2
