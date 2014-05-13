@@ -3,10 +3,13 @@ buhbye = 0
 
 while buhbye < 3
   words = gets.chomp 
-  puts 'words = ' + words + ' before first if'
+
 	if words == 'BYE'
 		buhbye += 1
 		puts 'Lovely weather we\'re having!'
+		if buhbye == 3
+			puts 'BYE SONNY, IT WAS NICE TO VISIT!'
+		end
 	else
 		buhbye = 0
 		if words == words.upcase
