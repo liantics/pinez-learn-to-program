@@ -1,41 +1,18 @@
-#branching for 2 names
+words = 'hi'
+buhbye = 0
 
-puts 'Hello, what\'s your name?'
-name = 'name' #gets.chomp make the program finish itself w/o input
-puts 'Hello, ' + name + '.'
-if name == ('Chris' or 'Katy')
-  puts 'What a lovely name!'
-end
-
-iAmLiane = true
-iAmPurple = false
-iLikeFood = true
-iEatRocks = false
-
-puts (iAmLiane  and iLikeFood)
-puts (iLikeFood and iEatRocks)
-puts (iAmPurple and iLikeFood)
-puts (iAmPurple and iEatRocks)
-puts
-puts (iAmLiane  or iLikeFood)
-puts (iLikeFood or iEatRocks)
-puts (iAmPurple or iLikeFood)
-puts (iAmPurple or iEatRocks)
-puts
-puts (not iAmPurple)
-puts (not iAmLiane )
-
-#things to try
-
-#deaf grandma
-puts "And now, it's time for a talk with deaf grandma ... say BYE when you're done."
-words = gets.chomp
-while words != 'BYE'
-	puts 'up = ' + words.upcase + ' down = ' + words.downcase + ' capitalize = ' + words.capitalize + ' words = ' + words + "\n"
-	if words == (words.upcase)
-	 	puts 'NO, NOT SINCE ' + (rand (1930 .. 1950)).to_s 
+while buhbye < 3
+  words = gets.chomp 
+  puts 'words = ' + words + ' before first if'
+	if words == 'BYE'
+		buhbye += 1
+		puts 'Lovely weather we\'re having!'
 	else
-		puts 'HUH?!  SPEAK UP, SONNY!'
-	end
-	words = gets.chomp
+		buhbye = 0
+		if words == words.upcase
+			puts words + ' NO, NOT SINCE ' + rand(1930 ... 1950).to_s
+	  else
+	  	puts words + ' I CAN\'T HEAR YOU SONNY, SPEAK UP!' 
+	  end 
+	end 
 end
