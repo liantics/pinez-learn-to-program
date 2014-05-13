@@ -12,11 +12,6 @@ end
 	cur_year = start_year.to_i
 
 while (num_years.to_i) > 0
-	#puts num_years.to_s + ' number of years'
-	#puts cur_year.to_s + ' current year'
-	#puts 'cur_year%4 is ' + (cur_year.to_i%4).to_s
-	#puts 'cur_year%100 is ' + (cur_year.to_i%100).to_s
-	#puts 'cur_year%400 is ' + (cur_year.to_i%400).to_s
 	if ((cur_year.to_i%100 == 0) and (cur_year.to_i%400 != 0))
 		puts cur_year.to_s + ' is not a leap year, even if it looks like one.'
 	else
@@ -26,9 +21,7 @@ while (num_years.to_i) > 0
 	end
 	
 	cur_year += 1
-		#puts cur_year.to_s + ' incremented current year'
 
 	num_years -= 1
-		#puts num_years.to_s + ' num years'
 
 end 
