@@ -21,7 +21,6 @@ while (num_years.to_i) > 0
 	end
 	
 	cur_year += 1
-
 	num_years -= 1
 
 end 
