@@ -36,7 +36,7 @@ puts foods.join(', ') +  ' ... foods.join(, )'
 puts
 puts foods.join('  :)  ') #join places items *between* array elements
 puts
-puts foods.join('  :)  ') +  ' 8-)'
+puts foods.join('  join put this between  ') +  ' this added end'
 
 
 
